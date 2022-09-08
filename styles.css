@@ -1,0 +1,133 @@
+
+:root{
+    --main-background-page: grey;
+    --main-text-color: black;
+    --header-bg-color: rgb(236, 236, 243);
+    --header-text-color: black;
+    --font-style-font-family: 'Roboto', sans-serif;
+    --font-style-font-family2: 'Oleo Script Swash Caps';
+    --cotainer-width: 95%;
+    --font-style-font-family3: 
+}
+
+/*-----------------------------primary header--------------*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+.name{
+    margin: .5rem;
+    font-size: 3.5rem;
+    font-family: var(--font-style-font-family2);
+    color: crimson;
+}
+
+
+body{
+    background-color: var(--main-background-page);
+    font: bolder, black, italic;
+    font-family: var(--font-style-font-family);
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav__list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__list li{
+    list-style: none;
+}
+
+.nav__list a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+
+.nav__list :hover{
+    background-color: crimson;
+}
+
+.navigation_toggle{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.navigation_toggle .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media(max-width: 600px){
+    .navigation_toggle{
+        display: flex;
+    }
+
+    .nav__list{
+        display:none;
+        
+    }
+
+   .header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav__list li{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav__list ul{
+        text-align: center;
+    }
+    
+    .nav__list li a{
+        padding: .5rem 1rem;
+    }
+
+    .nav__list .active{
+        display:flex;
+    }
+}
+
+
+/*-----------------------body-----------*/
+
+.section_intro_name, .section_introduction{
+    font-family: var(--font-style-font-family2);
+    display: block;
+    font-weight: bold;
+}
+
+.section_intro_name{
+    align-items: center;    
+}
+
+/*---------my work------*/
+
+.portfolio{
+    display: flex;
+}
